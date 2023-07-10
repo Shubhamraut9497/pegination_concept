@@ -1,0 +1,36 @@
+.products {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.product__content {
+  padding: 20px;
+  height: 220px;
+  background-color: rgb(220, 220, 220);
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer; /* Imp on clickables */
+}
+.product__content > img {
+  width: 100%;
+  height: 95%;
+  object-fit: cover;
+  margin-bottom: 3px;
+}
+.pegination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.pegination > span {
+  padding: 15px 20px;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+.pegination__selected {
+  background-color: gray;
+}
+.pegination__disabled {
+  display: none;
+}
